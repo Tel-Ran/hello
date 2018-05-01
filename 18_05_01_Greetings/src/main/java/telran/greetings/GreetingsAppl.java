@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class GreetingsAppl {
+	int count=0;
 @RequestMapping(value="greetings")
 String greetings(){
-	return "hello";
+	count++;
+	return "hello "+count;
 }
 	public static void main(String[] args) {
 		SpringApplication.run(GreetingsAppl.class, args);
