@@ -10,7 +10,7 @@ public class GreetingsAppl {
 	int count=0;
 @RequestMapping(value="greetings")
 String greetings(){
-	count+=2;
+	count+=4;
 	return "hello "+count;
 }
 @PostMapping(value="start")
